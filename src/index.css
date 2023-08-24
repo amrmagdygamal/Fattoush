@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-image: url("/restuarant-cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.container .card {
+  max-width: fit-content;
+  padding: 0.6rem 0.6rem;
+  backdrop-filter: blur(7px);
+  background-color: rgba(25, 16, 16, 0.404);
+  border: 0.3rem solid wheat;
+  border-radius: 3rem;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.m-title {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+  font-family: system-ui;
+}
+
+.intro-parag {
+  font-family: system-ui;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.nav-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.nav-btns .nav-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding: .4rem .8rem;
+  border-radius: 2.3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: black;
+}
+
+button:active,
+button:focus {
+  border: none;
+  outline: none;
+}
+
+.nav-btn h3 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.nav-btn img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+  .container .card {
+    max-width: 600px;
+    width: 70% !important;
+    margin-top: 5rem;
+    border-width: .4rem;
+    border-radius: 1.5rem;
+  }
+
+  .logo {
+    width: 9rem !important;
+    border-radius: .8rem !important;
+  }
+
+  .m-title {
+    font-size: 1.9rem;
+  }
+
+  .intro-parag {
+    font-size: 1.6rem;
+    text-align: center !important;
+  }
+
+  .nav-btns .nav-btn img {
+    width: 2.3rem;
+  }
+
+}
+@media only screen and (max-width: 590px) {
+
+  .container .card {
+    max-width: 540px;
+    width: 70% !important;
+    margin-top: 3.2rem;
+    border-width: .4rem;
+    border-radius: 1.5rem;
+  }
+
+  .logo {
+    width: 8rem !important;
+    border-radius: .8rem !important;
+  }
+
+  .m-title {
+    font-size: 1.9rem;
+  }
+
+  .intro-parag {
+    font-size: 1.6rem;
+    text-align: center !important;
+  }
+
+  .nav-btns .nav-btn img {
+    width: 2.3rem;
+  }
+
+}
+@media only screen and (max-width: 490px) {
+
+  .container .card {
+    max-width: 450px;
+    width: 80% !important;
+    margin-top: 3.2rem;
+    border-width: .4rem;
+    border-radius: 1.5rem;
+  }
+
+  .logo {
+    width: 8rem !important;
+    border-radius: .8rem !important;
+  }
+
+  .m-title {
+    font-size: 1.9rem;
+  }
+
+  .intro-parag {
+    font-size: 1.6rem;
+    text-align: center !important;
+  }
+
+  .nav-btns .nav-btn img {
+    width: 2.3rem;
+  }
+
+}
+@media only screen and (max-width: 391px) {
+
+  .container .card {
+    max-width: 360px;
+    width: 80% !important;
+    margin-top: 3.2rem;
+    border-width: .2rem;
+    border-radius: 1.5rem;
+  }
+
+  .logo {
+    width: 7rem !important;
+    border-radius: .8rem !important;
+  }
+
+  .m-title {
+    font-size: 1.3rem;
+  }
+
+  .intro-parag {
+    font-size: 1.1rem;
+    text-align: center !important;
+  }
+
+  .nav-btns .nav-btn img {
+    width: 1.9rem;
+  }
+
+}
+@media only screen and (max-width: 300px) {
+
+  .container .card {
+    max-width: 270px;
+    width: 79% !important;
+    margin-top: 2.5rem;
+    border-width: .2rem;
+    border-radius: 1.5rem;
+  }
+
+  .logo {
+    width: 5rem !important;
+    border-radius: .6rem !important;
+  }
+
+  .m-title {
+    font-size: 1.1rem !important;
+  }
+
+  .intro-parag {
+    font-size: .8rem !important;
+    text-align: center !important;
+  }
+
+  .nav-btns .nav-btn img {
+    width: 1.4rem;
+  }
+
+}
